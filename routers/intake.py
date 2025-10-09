@@ -52,7 +52,7 @@ async def process_raw_transaction(data: TransactionData):
         db_data['user_id'] = data.user_id
 
         # Save the transaction to the database
-        db_success = add_transaction_to_db(DB, db_data, data.user_id)
+        db_success = add_transaction_to_db(db, db_data, data.user_id)
 
         if not db_success:
             raise HTTPException(status_code=500, detail="Data parsed but failed to save to database")

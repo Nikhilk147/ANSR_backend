@@ -5,3 +5,4 @@ info.txt
 __pycache__/
 core/ansr.json
 output.txt
+dummy.py
