@@ -5,7 +5,7 @@ from models.intake import TransactionData
 from services.parsing_engine import format_transaction_data
 from core.setup import initialize_firebase
 
-DB = initialize_firebase()
+from core.setup import db
 router = APIRouter()
 
 def add_transaction_to_db(db, formatted_transaction, user_id):
