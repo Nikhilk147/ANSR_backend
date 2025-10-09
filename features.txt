@@ -1,0 +1,10 @@
+()Subscription & Regular Payment Detection → identifies recurring spends (e.g., Netflix, Gym, Rent) for better tracking.
+Smart Alerts & Fraud Anomaly Detection → warns before exceeding spending limits, detects scams or unusual activity.
+Refund & Income Tracking → automatically recognizes refunds, salary credits, and income streams.
+Bill & Cashflow Prediction → forecasts upcoming bills and monthly cashflow for planning.
+()Spotify Wrapped–Style Spending Summary → fun, engaging yearly/monthly highlights of spending habits.
+()AI Financial Assistant → chat-style agent to guide users and answer queries on expenses.
+()Detailed Dashboard with Visualizations → category-wise charts, trends, budgets, and savings insights.
+Offline-First with Sync → works with low bandwidth internet, syncs when back online.
+()Multilingual Support → financial insights in local languages for accessibility.
+Pending Payments Tracking → monitors money owed to or by other people.

@@ -1,0 +1,57 @@
+data that will come from mobile:
+- user_id
+- Timestamp (yyyy-mm-dd hh-mm-ss)
+- application_name (eg: flipcart, sms, phonepe)
+- sender_name (will display for sms, not sure about other application)
+- raw_message (string) 
+
+FIREBASE DATABASE:-
+Transaction table:
+- year (int)
+- month (int)
+- date (int)
+- day (string) [eg: friday]
+- amount (float)
+- sender_name (string) 
+- payment_method (eg: credit, debit, UPI)
+- payment_type (string) [eg: income, expense]
+- anomaly (bool) [for checking for scam, fraud. can be changed by user]
+- category (string, optional) [this payment is done for which category]
+- message (string, optional) [just to show on app]
+# based on unique user id, all the data should be displayed, can be multiple
+
+limit table-
+- daily_limit (int)
+- weekly_limit (int) 
+- monthly_limit (int)
+- yearly_limit (int) 
+# based on unique user id, will get only 1 row 
+
+pending table:
+- amount (int)
+- user_name (string) [name of other person]
+- relation (string) [to_give, to_take]
+- reason (string, optional)
+# single user id can give multiple rows
+
+chat_history table:
+- user_id (string)
+- chat_message (json) eg:
+    {"human":"hello",
+    "AI":"hi",
+    "human":"go touch grass"}
+#each user id only 1 row, but json message can be big. try to keep limit of 20 chat messages 
+
+summary table:
+- day_out (float) [total spending of the day]
+- week_out (float) 
+- month_out (float)
+- year_out (float)
+- day_in (float) [total income of the day]
+- week_in (float) 
+- month_in (float)
+- year_in (float)
+- day_cashflow (float) [cashflow of the day]
+- week_cashflow (float) 
+- month_cashflow (float)
+- year_cashflow (float)
