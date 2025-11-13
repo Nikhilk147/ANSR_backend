@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 from supabase import create_client, Client
 
-def initialize_supabase():
+def initialize_firebase():
     """
     Initializes Supabase client.
     """
