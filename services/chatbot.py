@@ -3,11 +3,11 @@ from dotenv import load_dotenv
 from supabase import create_client, Client
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
-from core.setup import initialize_firebase
+from core.setup import initialize_supabase
 # --- 1. Supabase Initialization ---
 # This replaces the get_firestore_client() service
 load_dotenv()
-db = initialize_firebase
+db = initialize_supabase
 
 
 

@@ -1,3 +1,6 @@
+# this file may get removed in the future
+
+
 import firebase_admin
 from firebase_admin import credentials, firestore
 import os

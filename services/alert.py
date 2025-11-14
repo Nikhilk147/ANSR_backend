@@ -1,6 +1,6 @@
-from core.setup import initialize_firebase
+from core.setup import initialize_supabase
 
-db = initialize_firebase()
+db = initialize_supabase()
 
 
 def limit_checker(user_id):

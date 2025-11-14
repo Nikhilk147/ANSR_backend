@@ -4,7 +4,7 @@ from collections import defaultdict
 from dotenv import load_dotenv
 from supabase import create_client, Client
 from dateutil.parser import parse as parse_datetime
-from core.setup import initialize_firebase
+from core.setup import initialize_supabase
 
 # --- 2. Data Fetching ---
 
@@ -127,7 +127,7 @@ def main():
     """
     print("--- Starting Transaction Anomaly Detector ---")
 
-    db = initialize_firebase()
+    db = initialize_supabase()
 
     if not db:
         print("\n--- Halting execution due to Supabase connection error. ---")

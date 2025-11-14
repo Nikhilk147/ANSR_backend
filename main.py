@@ -2,10 +2,10 @@ import uvicorn
 from fastapi import FastAPI
 from fastapi.responses import RedirectResponse
 
-from core.setup import initialize_firebase
+from core.setup import initialize_supabase
 from routers import alert, prediction, intake, recurring, chatbot
 
-db = initialize_firebase()
+db = initialize_supabase()
 # The db object is imported from core.setup where it is initialized.
 # If db is None, it means initialization failed, and we should exit.
 if not db:

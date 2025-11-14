@@ -1,11 +1,11 @@
 from collections import defaultdict
 from datetime import date, timedelta
 import numpy as np
-from core.setup import initialize_firebase  # Using your custom initializer
+from core.setup import initialize_supabase  # Using your custom initializer
 from dateutil.parser import parse as parse_datetime  # For parsing timestamps
 
 # --- 1. SUPABASE INITIALIZATION ---
-DB = initialize_firebase()
+DB = initialize_supabase()
 MIN_TRANSACTIONS = 3  # Minimum number of transactions to be considered a potential subscription
 TOLERANCE_PERCENT = 0.10  # Amount can vary by +/- 10%
 

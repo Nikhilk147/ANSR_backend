@@ -1,11 +1,11 @@
 from flask import Flask, request, jsonify
-from core.setup import initialize_firebase  # Using your custom initializer
+from core.setup import initialize_supabase  # Using your custom initializer
 
 # Note: datetime is no longer needed as Supabase handles timestamps
 
 # --- 1. SUPABASE INITIALIZATION ---
 # Initialize the Supabase client using your custom function
-db = initialize_firebase()
+db = initialize_supabase()
 
 # --- 2. FLASK APPLICATION ---
 app = Flask(__name__)

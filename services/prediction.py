@@ -1,4 +1,4 @@
-from core.setup import initialize_firebase  # Using your custom initializer
+from core.setup import initialize_supabase  # Using your custom initializer
 from datetime import datetime, timedelta
 from collections import defaultdict
 import numpy as np
@@ -10,7 +10,7 @@ def get_spending_prediction(user_id: str, timeframe: str):
     Predicts future expenses based on historical data from Supabase.
     """
     try:
-        db = initialize_firebase()
+        db = initialize_supabase()
         if not db:
             raise Exception("Supabase client not initialized")
 
